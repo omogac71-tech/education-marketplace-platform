@@ -1,0 +1,27 @@
+{
+  "name": "education-marketplace-platform",
+  "version": "1.0.0",
+  "description": "Full-stack educational marketplace platform connecting teachers and students",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && nodemon index.js",
+    "client:dev": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && node index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "education",
+    "marketplace",
+    "teaching",
+    "learning",
+    "courses"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
